@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Box table</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <div id="red" onclick="alert('Дорогой ' + name +'!' + ' Вы щелкнули по красному квадратику');"></div>
+        </td>
+        <td>
+          <div id="green" onclick="alert('Дорогой ' + name +'!' + ' Вы щелкнули по зеленому квадратику');"></div>
+        </td>
+        <td>
+          <div id="blue" onclick="alert('Дорогой ' + name +'!' + ' Вы щелкнули по синему квадратику');"></div>
+        </td>
+      </tr>
+    </table>
+    <script>
+        let name;
+        name = prompt();
+    </script>
+  </body>
+</html>
