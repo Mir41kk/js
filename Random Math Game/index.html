@@ -28,8 +28,12 @@
                 alert("Input Error")
                 break
             }
-            if(x != n){
-                alert("Try again")
+            if(x >= n){
+                alert("Try again: input > random")
+                continue
+            }
+            if(x <= n){
+                alert("Try again: input < random")
                 continue
             }
             }
