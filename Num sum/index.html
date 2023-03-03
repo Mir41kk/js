@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Summary</title>
+</head>
+<body>
+    <button onclick="start()">start</button>
+    <script>
+        function start(x , first , second , last , calc){
+            x = +prompt("Input numbers:")
+            while(true){
+                last = Math.floor(x % 10)
+                second = Math.floor(x / 10 % 10)
+                first = Math.floor(x / 10 / 10 % 10)
+                calc = last + second + first
+                alert(first + "+" + second + "+" + last + "=" + calc )
+                break
+            }
+        }
+    </script>
+</body>
+</html>
