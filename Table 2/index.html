@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 2</title>
+</head>
+<body>
+    <button onclick="table()">Create Table</button>
+    </table>
+    <script>
+        let x;
+        let y;
+        let b;
+        let c;
+        let str;
+        function table() {
+            x = +prompt("How many columns you need:")
+            y = +prompt("How many rows you need:")  
+                    for(let v = 1; v < y + 1; ++v){
+                        str = str + v;
+                        b = ("<td>" + v + "</td>").repeat(v)
+                        c = ("<tr>" + b + "</tr>")
+                        document.write("<table style='border: 1px solid black'>" + c  + "</table>")
+                    }   
+}
+        
+    </script>
+</body>
+</html>
