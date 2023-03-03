@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="cube()">Calc Cube</button>
+    <button onclick="rectangle()">Calc Rectangle</button>
+    <button onclick="Calc()">Input numbers:</button>
+    <script src="./index.js"></script>
+    <script>
+        // Если это квадрат и куб то стороны одинаковые соответсвенно можно умножать 1 число само на себя
+        function Calc(){
+            x = +prompt("Input x and y:")
+            if(isNaN(x) || x == ""){
+                alert("Error Input")
+            } 
+            else{
+                alert("Thanks !")
+            }  
+        }
+    </script>
+</body>
+</html>
