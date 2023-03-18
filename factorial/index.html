@@ -7,13 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="factorial()">factorial</button>
     <script>
-        let n = +prompt();
+        function factorial(){
+            let n = +prompt();
         let sum = 1;
         for(let i = 1; i <= n; i++){
             sum *= i;
         }
         alert(sum)
+        }
+        
     </script>
 </body>
 </html>
