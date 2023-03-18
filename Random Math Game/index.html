@@ -9,14 +9,14 @@
 <body>
     <button onclick="play()">Start</button>
     <script> 
-        function play(){
-            let x;
-            let a = 0;
-            let b = 11;
+        function play(x,a,b,n){
+            x;
+            a = 0;
+            b = 11;
             function getRandomInt(){
                 return Math.floor(Math.random() * (b - a));
             }
-            let n;
+            n;
             n = getRandomInt()
             while(true){
             x = prompt("Input: ")
